@@ -1,0 +1,36 @@
+ATIVIDADES
+1-
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num;
+            WriteLine("Digite qualquer numero para descobrir se ele é impar ou par!");
+            num = int.Parse(ReadLine());
+            if (num % 2 == 0)
+            {
+                WriteLine($"O numero {num} é par!");
+            }
+            else
+            {
+
+                WriteLine($"O numero {num} é impar!");
+            }
+            ReadKey();                
+        }
+    
+    }
+}
+
+
+2-
