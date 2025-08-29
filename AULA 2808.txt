@@ -1,0 +1,253 @@
+
+
+EXERCICIO 1
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = 92139;
+            if (num % 2 == 0)
+            {
+                WriteLine($"O numero {num} é par");
+            }
+            else
+            {
+                 WriteLine($"O numero {num} é ímpar");
+            }
+            ReadKey;
+           
+        }
+    }
+}
+
+
+
+
+
+exercicio 3
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double num1, num2, resultado;
+            char operaçao;
+            WriteLine("Digite o primeiro numero:  ");
+            num1 = Convert.ToDouble(ReadLine());
+            WriteLine("DIgite o segundo numero:   ");
+            num2 = Convert.ToDouble(ReadLine());
+            WriteLine("Digite a operaçao (+, -, *, /):  ");
+            operaçao = Convert.ToChar(ReadLine());
+            if (operaçao == '+')
+            {
+                resultado = num1 + num2;
+                WriteLine($"O resultado da soma foi: {num1} + {num2} = {resultado}");
+            }
+            else if (operaçao == '-')
+            {
+                resultado = num1 - num2;
+                WriteLine($"O resultado da subtraçao foi:    {num1} - {num2} = {resultado} ");
+
+            }
+            else if (operaçao == '*')
+            {
+                resultado = num1 * num2;
+                WriteLine($"O resultado da multiplicaçao foi: {num1} * {num2} = {resultado} ");
+            }
+            else if (operaçao == '/') 
+            {
+                if (num2 != 0)
+                {
+                    resultado = num1 / num2;
+                    WriteLine($"O resultado da multiplicaçao foi: {num1} / {num2} = {resultado} ");
+                }
+                else
+                {
+                    WriteLine("Erro de divisao pro zero!");
+                }
+
+            }
+            else
+            {
+                WriteLine("Operaçao invalida!");
+            }
+            ReadKey();
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal valorcompra = 520.00m;
+            decimal valorcomdesconto = valorcompra;
+            decimal desconto = 0;
+            if ( valorcompra >= 50 && valorcompra <= 100)
+            {
+                desconto = 0.05m;
+            }
+            else if (valorcompra > 100)
+            {
+                desconto = 0.10m;
+            }
+            valorcomdesconto -= valorcompra * desconto;
+            WriteLine($"Valor da compra: {valorcompra:F2}");
+            WriteLine($"Valor do desconto: {(desconto * 100):F0}%");
+            WriteLine($"valor do desconto: {valorcomdesconto:F2}");
+            ReadKey();
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int ano = 2145;
+            if ((ano % 4 == 0 && ano % 100 != 0) || ano % 400 == 0)
+            {
+                WriteLine($" O ano {ano} é um ano bissexto!");
+            }
+            else
+            {
+                WriteLine($"O ano {ano} nao é um é bissexto!");
+            }
+            ReadKey();
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double notaConceito = 8.5;
+            string conceito;
+            switch((int)notaConceito / 1)
+            {
+                case 10:
+                case 9:
+                    conceito = "A";
+                    break;
+                case 8:
+                case 7:
+                    conceito = "B";
+                    break;
+                case 6:
+                case 5:
+                    conceito = "C";
+                    break;
+                case 4:
+                case 3:
+                case 2:
+                case 1:
+                case 0:
+                    conceito = "D";
+                    break;
+                default:
+                    conceito = "Nota invalida";
+                    break;
+            }
+            WriteLine($"Nota: {notaConceito} - conceito: {conceito}");
+            ReadKey();
+        }
+        
+    }
+}
+
+
+
