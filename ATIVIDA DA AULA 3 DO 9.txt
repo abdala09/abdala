@@ -1,0 +1,66 @@
+EX 1-
+using System;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, resultado;
+            WriteLine("<<<<<<<<<<TABUADA>>>>>>>>>");
+            WriteLine("Digite um numero inteiro:");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i <= 10; i++)
+            {
+                resultado = n * i;
+                WriteLine($"{n.ToString()} X {i.ToString()} = {resultado.ToString()}");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+EX 2-
+
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("Digite um numero inteiro:");
+            int N = int.Parse(Console.ReadLine());
+
+            int soma = 0;
+            for (int i = 1; i <= N; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    soma += i;
+                }
+            } 
+                WriteLine($"\nA soma  dos  numeros pares até {N} é: {soma}");
+
+            ReadKey();
+        }
+    }
+}
+
