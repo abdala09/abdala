@@ -1,0 +1,211 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 0; i <= 15; i++)
+            {
+                int res = i * 2;
+                WriteLine(res.ToString());
+            }
+            ReadKey();
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int contador = 2;
+            while (contador != 10)
+            {
+                WriteLine(contador.ToString());
+                contador++;
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int numero = 0;
+            while (numero < 150)
+            {
+                numero += 10;
+                WriteLine($"numero o é {numero}");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            string[] nomes = { "Paula, abdala, Cleiton, nick" };
+            foreach (var item in nomes)
+            {
+                WriteLine( item);
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlTypes;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n1, n2;
+            WriteLine(" Digite um número inicial:");
+            n1= int.Parse(ReadLine());
+            WriteLine("Digite um número;");
+            n2= int.Parse(ReadLine());
+            for(int i = n1; i <= n2; i++)
+            {
+                WriteLine(i);
+                WriteLine("==");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("Digite um numero da tabuada:");
+            int numero = int.Parse(ReadLine());
+
+            WriteLine($"\nTabuada da {numero}");
+            for(int i = 0; i < numero; i++)
+            {
+                WriteLine($" {numero} x {i} = {numero * i}");
+            }
+                ReadKey();
+        }
+    }
+}
+
+
+
+
+using System;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, resultado;
+            WriteLine( "<<<<<<<<<<TABUADA>>>>>>>>>");
+            WriteLine("Digite um numero inteiro:");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i <= 10; i++)
+            {
+                resultado = n * i;
+                WriteLine($"{n.ToString()} X {i.ToString()} = {resultado.ToString()}");
+            }
+                ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
