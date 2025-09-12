@@ -1,0 +1,298 @@
+
+
+                       !!!!!!!!!!!!!!CORREÇAO DA LISTA, OS CODIGOS AS FRENTE SAO DO PROFESSOR!!!!!!!!!!!!!!!!!!
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("Digite um numero inteiro: ");
+            int numero = int.Parse(Console.ReadLine());
+            for (int i = 0; i <=10;i++)
+            {
+                WriteLine($"{numero} X {i} = {numero * i} ");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("Digite um numero inteiro: ");
+            int numero = int.Parse(ReadLine());
+            int soma = 0;
+            for (int i = 1; i <=numero;i++)
+            {
+                if (i % 2 == 0)
+                {
+                    soma += i;
+                }
+            }
+            WriteLine($"A soma dso numeros pares de 1 até {numero} é: {soma}");
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("Numeros primos 1 a 100:");
+            for (int num = 0; num <= 100; num++)
+            {
+                bool primo = true;
+                for (int div = 2;div <= Math.Sqrt(num);div++) 
+                {
+                    if (num % div == 0)
+                    {
+                        primo = false;
+                        break;
+                    }
+                }
+                if (primo) 
+                {
+                    WriteLine(num + " ");
+                }
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string senha;
+            do
+            {
+                Write("Digite a senha:");
+                senha = ReadLine();
+            }
+            while (senha != "12345");
+            WriteLine("Acesso permitido");
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int soma = 0, count = 0, num;
+            WriteLine("Digite numeros inteiros(0 para ter a conclusão final da media):");
+            while ((num = int.Parse(ReadLine())) != 0)
+            {
+                soma += num;
+                count++;
+            }
+            if (count > 0 )
+            {
+                WriteLine($"Media: {(double)soma / count}");
+            }
+            else
+            {
+                WriteLine("Nenhum numero foi digitado. ");
+            }           
+            ReadKey();
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] nomes = { "Paula", "Abdala", "Felipe", "Canova", "Duda" };
+            foreach (string me in nomes)
+            {
+                WriteLine($"Olá  {nomes}!");
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int soma = 0;
+            foreach (int num in numeros)
+            {
+                soma += num;
+            }
+            WriteLine($"A soam dos numeros é: {soma}");
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            WriteLine("Digite uma palavra");
+            string  palavra = ReadLine().ToLower();
+            int vogais = 0;
+            foreach (char letra in palavra)
+            {
+                if ("aceitou".Contains(letra))
+                {
+                    vogais++;
+                }
+            }
+            WriteLine($"A palavra '{palavra} tem {vogais} vogais.");
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Write("DIgite um numero inteiro:");
+            int numero = int.Parse(ReadLine());
+            long fatorial = 1;
+            for (int i = 2; i <= numero ; i++)
+            {
+                fatorial *= i;
+            }
+            WriteLine($"O fatorial {numero} é {fatorial}");
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
