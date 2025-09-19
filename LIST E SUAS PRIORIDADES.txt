@@ -1,0 +1,74 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("banana");
+            frutas.Add("maça");
+            frutas.Add("laranja");
+            WriteLine("Frutas na lista:");
+            foreach (var fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Acessando pelo indice:");
+            WriteLine(frutas[0]);
+            WriteLine("Removendo um item da lista");
+            frutas.Remove("banana");
+            foreach (var fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            WriteLine("Removendo um item da lista por posiçao");
+            frutas.RemoveAt(0);
+            foreach (var fruta in frutas)
+            {
+                WriteLine(fruta);
+            }
+            frutas.Add("banana");
+            frutas.Add("maça");
+            WriteLine($"Numero de elementos na list: {frutas.Count}");
+            bool temBanana = frutas.Contains("banana");
+            if (temBanana == true)
+            {
+                WriteLine("Sua lista tem banana");
+            }
+            else
+            {
+                WriteLine("Sua lista não tem banana");
+            }
+            WriteLine("Digite o nome de uma fruta: ");
+            string frutaDigitada = ReadLine();
+            int indiceLatanja = frutas.IndexOf(frutaDigitada);
+            if(indiceLatanja  < 0 )
+            {
+                WriteLine($"Esta fruta, {frutaDigitada} nao esta na sua lista");
+            }
+            else
+            {
+                WriteLine($"O indice da {frutaDigitada} é: {indiceLatanja}");
+                WriteLine($"O indice da banana é: {indiceLatanja}");
+            }
+            List<string> nomes = new List<string>();
+            for (int i = 0; i < 5; i++)
+            {
+                WriteLine("Digite um nome ");
+                string nome = ReadLine();
+                nomes.Add(nome);
+            }
+            foreach (string nome2 in nomes)
+            {
+                WriteLine(nome2); 
+            }
+            ReadKey();
+        }
+    }
+}
