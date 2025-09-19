@@ -1,0 +1,165 @@
+EXE 1
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> numero = new List<string>();
+            numero.Add("10");
+            numero.Add("20");
+            numero.Add("30");
+            WriteLine("numeros na lista:");
+            foreach (var numeros in numero)
+            {
+                WriteLine(numeros);
+            }
+            WriteLine($"Numero na lista: {numero.Count}");
+            bool temNumeros = numero.Contains("");
+            if ( temNumeros == true)
+            {
+                WriteLine("Sua lista tem quantos elementos: ");
+            }
+            
+            ReadKey();
+        }
+    }
+}
+
+
+EXE 2
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> cidade = new List<string>();
+            cidade.Add("Amsterdã");
+            cidade.Add("Maringá");
+            cidade.Add("Boston");
+            foreach (var cidades in cidade)
+            {
+                WriteLine(cidades);
+            }            
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+EXE 3 
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> nomes = new List<string>();
+            for (int i = 0; i < 3; i++)
+            {
+                WriteLine("Digite um nome ");
+                string nome = ReadLine();
+                nomes.Add(nome);
+            }
+            foreach (string nome2 in nomes)
+            {
+                WriteLine(nome2);
+            }
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+
+EXE 4
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> frutas = new List<string>();
+            frutas.Add("pessego");
+            frutas.Add("goiaba");
+            frutas.Add("pera");
+            WriteLine("As numeros aonde cada fruta se comporta é: ");
+            WriteLine(frutas[0]);
+            WriteLine(frutas[2]);
+            ReadKey();
+        }
+    }
+}
+
+
+
+
+EXE 5
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using static System.Console;
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> animais = new List<string>();
+            animais.Add("gato");
+            animais.Add("cachorro");
+            animais.Add("coelho");
+            WriteLine("Digite o nome de algum animal: ");
+            WriteLine ReadLine();
+          
+            ReadKey();
+        }
+    }
+}
